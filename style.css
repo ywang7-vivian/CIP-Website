@@ -1,0 +1,238 @@
+body {
+    font-family: Candara;
+}
+
+.page {
+    padding-top: 4.5rem;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+.hovereffect {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.4);
+    -webkit-filter: brightness(0.4);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 24px;
+    background-color: transparent;
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p,
+.hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+a.cover-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+}
+
+.hovereffect p {
+    font-size: 15px;
+    color: #FFF;
+    text-align: left;
+}
+
+.hovereffect .label {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.hovereffect .date {
+    text-align: center;
+    font-size: 14px;
+}
+
+.boldserif {
+    font-family: Lato;
+    font-weight: bold;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+    background-color: #3E5D7A;
+}
+
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.index_btn {
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid #33384e;
+}
+
+.close {
+    background-color: white;
+    border: none;
+    font-size: 10pt;
+}
+
+.about_icon {
+    font-size: 22pt;
+    color: #f3aa4a
+}
+
+.header_btn {
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid #f3aa4a;
+    color: #f3aa4a;
+}
+
+.text-light {
+    color: #F2F0E1;
+    text-decoration: none;
+}
+
+.text-light:hover {
+    color: #F2F0E1;
+    text-decoration: none;
+}
+
+.text-main {
+    color: #3E5D7A;
+    text-decoration: none;
+}
+
+.text-main:hover {
+    color: #3E5D7A;
+    text-decoration: none;
+}
+
+.current_page {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.current_page:hover {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.other_page {
+    text-decoration: none;
+}
+
+.other_page:hover {
+    size: 120%;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1 {
+    color: #D65A40;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #3e5d7a;
+    font-weight: bold;
+}
+
+.bg_dark {
+    background-color: #33384E;
+}
+
+#particles-img {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+    background-color: #3E5D7A;
+}
