@@ -123,14 +123,14 @@ h3 {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .active,
 .collapsible:hover {
     background-color: white;
     color: #ee6c4d;
-    font-size: 30px;
+    font-size: 28px;
     border-bottom: 1px solid #ebecf0
 }
 
